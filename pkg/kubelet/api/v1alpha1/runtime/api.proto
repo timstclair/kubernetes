@@ -636,10 +636,12 @@ message ExecSyncRequest {
     repeated string cmd = 2;
     // Timeout in seconds to stop the command. Default: run forever.
     optional int64 timeout = 3;
+    // Whether stdout and stderr output should be merged into a single stdout result.
+    optional bool combine_output = 4;
 }
 
 message ExecSyncResponse {
-    // The captured command stdout output.
+    // The captured command stdout output, or combined stdout + stderr if combine_output was set.
     optional bytes stdout = 1;
     // The captured command stderr output.
     optional bytes stderr = 2;
