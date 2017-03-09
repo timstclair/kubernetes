@@ -29,8 +29,6 @@ libaudit-common
 libaudit1
 libbz2-1.0
 libc-bin
-libc-dev-bin
-libc6-dev
 libc6
 libcap2
 libcomerr2
@@ -66,7 +64,6 @@ libusb-0.1-4
 libustr-1.0-1
 libuuid1
 libyaml-0-2
-linux-libc-dev
 login
 lsb-base
 mawk
