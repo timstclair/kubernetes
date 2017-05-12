@@ -40,7 +40,6 @@ const (
 	LevelResponse Level = "Response"
 )
 
-// +genclient=true
 // +nonNamespaced=true
 
 // Event captures all the information that can be included in an API audit log.
@@ -100,7 +99,6 @@ type EventList struct {
 	Items []Event `json:"items" protobuf:"bytes,2,rep,name=items"`
 }
 
-// +genclient=true
 // +nonNamespaced=true
 
 // Policy defines the configuration of audit logging, and the rules for how different request

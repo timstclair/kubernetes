@@ -38,7 +38,6 @@ const (
 	LevelResponseObject Level = "ResponseObject"
 )
 
-// +genclient=true
 // +nonNamespaced=true
 
 // Event captures all the information that can be included in an API audit log.
@@ -98,7 +97,6 @@ type EventList struct {
 	Items []Event
 }
 
-// +genclient=true
 // +nonNamespaced=true
 
 // Policy defines the configuration of audit logging, and the rules for how different request
